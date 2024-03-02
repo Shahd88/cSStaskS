@@ -1,0 +1,17 @@
+div {
+    width: 300px;
+    height: 60px;
+    margin: 3% auto;
+    padding: 5px;
+    text-align: center;
+
+}
+
+:empty {
+    background-color: red;
+}
+
+.div1,
+.div2 {
+    background-color: rgb(229, 229, 229);
+}

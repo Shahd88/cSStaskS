@@ -1,0 +1,12 @@
+.div1,
+.div2,
+.div3,
+.div4 {
+    max-width: 400px;
+    background-color: antiquewhite;
+    max-height: 400px;
+}
+
+.div4 {
+    overflow: hidden;
+}

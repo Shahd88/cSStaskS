@@ -1,0 +1,45 @@
+* {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    width: 200px;
+    margin: 20% auto;
+    position: relative;
+}
+
+div::after {
+    width: 200px;
+    height: 200px;
+    content: "Elzero";
+    background-color: rgb(96, 125, 139);
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 15px;
+    border-bottom: 5px solid black;
+    color: white;
+    z-index: -1;
+}
+
+div::before {
+    width: 123px;
+    height: 123px;
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: -81px;
+    right: 4px;
+    padding: 15px;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}

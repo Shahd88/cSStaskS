@@ -1,0 +1,35 @@
+.main {
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    list-style-type: none;
+}
+
+.li1 {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.nested1 li {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    margin: 8px;
+}
+
+.nested2 li {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    margin: 8px;
+}
+
+.nested3 {
+
+    list-style: circle inside;
+}
+
+.nested3 li {
+    padding: 3px;
+    margin: 8px;
+    background-color: rgb(255, 255, 255);
+}

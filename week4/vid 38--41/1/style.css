@@ -1,0 +1,31 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    padding: 26px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px;
+    counter-increment: count;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 6px 3px 0px 0px #00b9ff, -6px -4px 0px 0px #ff006f;
+}
+
+div::before {
+    content: counter(count);
+    position: absolute;
+    top: -11px;
+    left: 40px;
+    width: 20px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    box-sizing: border-box;
+}

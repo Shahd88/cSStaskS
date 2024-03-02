@@ -1,0 +1,42 @@
+.arrow {
+    background-color: #eee;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+}
+.arrow.top::after{
+content: "";
+border: 15px solid;
+border-color: transparent transparent #eee transparent;
+position: absolute;
+top: -50%;
+left: 45%;
+}
+
+
+.arrow.right::after {
+    content: "";
+    border: 15px solid;
+    border-color: transparent transparent transparent #eee;
+    position: absolute;
+    top: 27%;
+    right: -8.5%;
+}
+.arrow.bottom::after {
+    content: "";
+    border: 15px solid;
+    border-color:#eee transparent transparent  transparent;
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
+
+.arrow.left::after {
+    content: "";
+        border: 15px solid;
+        border-color: transparent #eee transparent transparent;
+        position: absolute;
+        top: 24%;
+        left: -8.5%;
+}

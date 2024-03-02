@@ -1,0 +1,50 @@
+.grid {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 15px;
+    grid-template-areas: "eight eight eight eight eight eight eight eight eight eight "
+    "two two two two two two two three three three"
+    "four four four five five five five five five five"
+    "six six six five five five five five five five" 
+    "seven seven seven five five five five five five five" 
+    "one one one one one one one one one one";
+    margin: 15px auto;
+
+}
+div{
+    background-color: rgb(33, 150, 243);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.one{
+grid-area: one;
+}
+.eight{
+    grid-area: eight;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.seven{
+    grid-area: seven;
+}
+.six{
+    grid-area: six;
+}

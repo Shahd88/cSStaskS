@@ -1,0 +1,33 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 60px 1fr;
+    gap: 20px;
+}
+
+.grid div {
+    background-color: rgb(85, 116, 125);
+    counter-increment: element;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid div::before {
+    content: "Element" counter(element);
+    width: 50px;
+    height: 30px;
+    color: white;
+    top: 11px;
+    left: 93px;
+
+}

@@ -1,0 +1,31 @@
+* {
+
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    width: 600px;
+    margin: 4% 25px 0% 25%;
+    padding: 20px;
+    background-color: #eee;
+    position: relative;
+    caret-color: red;
+    border: 0px;
+    outline: 0px;
+}
+
+div::after {
+    content: "";
+    height: 4px;
+    width: 600px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(255, 94, 0)50%, rgb(0, 150, 136)50%)
+}
+
+.two,
+.three {
+    color: rgba(0, 0, 0, 0.501);
+}

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: 15% auto;
+    display: flex;
+    background-color: #eee;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+div {
+    flex-basis: calc(90% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: center; */
+    color: white;
+    padding: 15px;
+    height: 50%;
+
+}
+
+.one {
+    order: 2;
+    align-self: self-start;
+    background-color: orange;
+}
+
+.two {
+    order: 3;
+    align-self: self-end;
+    background-color: greenyellow;
+}
+
+.three {
+    order: 4;
+    align-self: self-start;
+    background-color: rgb(158, 89, 89);
+}
+
+.four {
+    order: 1;
+    align-self: self-end;
+    background-color: rgb(137, 83, 188);
+}
